@@ -10,10 +10,7 @@ const NavBar = () => {
   return (
     <div className="navbar bg-base-300 shadow-sm">
       <div className="flex-1">
-        <a onClick={() => navigate("/login")} className="btn btn-ghost text-xl">
-          {" "}
-          👨🏻‍💻 DevTinder
-        </a>
+        <a className="btn btn-ghost text-xl"> 👨🏻‍💻 DevTinder</a>
       </div>
       {user && (
         <div className="flex gap-2">
@@ -45,7 +42,7 @@ const NavBar = () => {
                 <a>Settings</a>
               </li>
               <li>
-                <a>Logout</a>
+                <a onClick={() => navigate("/login")}>Logout</a>
               </li>
             </ul>
           </div>
